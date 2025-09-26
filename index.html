@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 id="welcome">Hi, Welcome to My Portfolio</h1>
+      <p>Discover my works, passion, and skills.</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="profile" class="profile">
+    <h2>About Me</h2>
+    <div class="profile-cards">
+      <div class="card">
+        <h3>Who Am I?</h3>
+        <p>I am <b>Your Name</b>, a web developer who loves creating impactful digital products.</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>To design and build meaningful, user-friendly web solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Mission</h3>
+        <p>Keep learning, innovating, and delivering high-quality projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2>My Works</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="img/website-RSBH.png" alt="Project 1">
+        <div class="project-info">
+          <h3>Landing Page</h3>
+          <p>Responsive landing page for startup.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/laundry.png" alt="Project 2">
+        <div class="project-info">
+          <h3>Mobile UI Design</h3>
+          <p>Clean & modern mobile app UI.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/E-commerce.jpg" alt="Project 3">
+        <div class="project-info">
+          <h3>E-commerce</h3>
+          <p>Online shop with shopping cart system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="contact" class="contact">
+    <h2>Message Me</h2>
+    <div class="form-container">
+      <form id="messageForm">
+        <label>Nama:</label>
+        <input type="text" id="nama" required>
+
+        <label>Tanggal Lahir:</label>
+        <input type="date" id="tgl" required>
+
+        <label>Jenis Kelamin:</label>
+        <div class="gender">
+          <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+          <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </div>
+
+        <label>Pesan:</label>
+        <textarea id="pesan" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="result" class="result-box"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio | Created by Rawasiana Saira</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
